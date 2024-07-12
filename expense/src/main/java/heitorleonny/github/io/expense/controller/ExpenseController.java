@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 
 @RestController
@@ -21,6 +22,11 @@ public class ExpenseController {
     @GetMapping
     public List<ExpenseDTO> findAllExpenses(){
         return expenseService.findAllExpenses();
+    }
+
+    @GetMapping("/{id}")
+    public ExpenseDTO findById(@PathVariable UUID id){
+        return expenseService.findById(id);
     }
 
     @PostMapping
