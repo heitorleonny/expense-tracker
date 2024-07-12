@@ -42,4 +42,13 @@ public class ExpenseService {
 
 
     }
+
+    public void updateExpense(Expense expense) {
+        Expense newExpense = repository.findById(expense.getId()).orElseThrow();
+        newExpense.setName(expense.getName());
+        newExpense.setValue(expense.getValue());
+        newExpense.setDate(expense.getDate());
+        newExpense.setDescription(expense.getDescription());
+        repository.save(newExpense);
+    }
 }

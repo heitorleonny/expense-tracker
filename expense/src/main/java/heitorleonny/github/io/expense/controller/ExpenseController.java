@@ -34,4 +34,9 @@ public class ExpenseController {
         expenseService.saveExpense(expense);
 
     }
+
+    @PutMapping
+    public void updateExpense(@RequestBody Expense expense){
+        expenseService.updateExpense(expense);
+    }
 }
