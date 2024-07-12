@@ -1,5 +1,6 @@
 package heitorleonny.github.io.expense.controller;
 
+import heitorleonny.github.io.expense.dto.ExpenseDTO;
 import heitorleonny.github.io.expense.model.Expense;
 import heitorleonny.github.io.expense.service.ExpenseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class ExpenseController {
     private ExpenseService expenseService;
 
     @GetMapping
-    public List<Expense> findAllExpenses(){
+    public List<ExpenseDTO> findAllExpenses(){
         return expenseService.findAllExpenses();
     }
 
