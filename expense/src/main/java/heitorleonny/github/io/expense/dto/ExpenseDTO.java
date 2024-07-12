@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
 public class ExpenseDTO {
     public String name;
     public Number value;
-    public LocalDateTime date;
+    public LocalDate date;
     public String description;
 
 
