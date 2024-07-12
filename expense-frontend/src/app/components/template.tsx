@@ -9,6 +9,7 @@ export const Template: React.FC<TemplateProps>= ({children}) => {
         <div>
         <NavBar />
         {children}
+        <Footer />
         </div>
     )
 }
@@ -24,5 +25,14 @@ const NavBar: React.FC = () => {
                 </a>
             </nav>
         </header>
+    )
+}
+
+
+const Footer: React.FC = () => {
+    return(
+        <footer className="bg-red-400 text-white font-light flex justify-center">
+            <p>Desenvolvido por <a className="font-bold" href="https://github.com/heitorleonny"> Heitor Leonny</a>.</p>
+        </footer>
     )
 }
