@@ -14,6 +14,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/expense")
+@CrossOrigin("*")
 public class ExpenseController {
 
     @Autowired
