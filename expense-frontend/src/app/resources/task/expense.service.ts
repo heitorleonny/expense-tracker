@@ -1,11 +1,11 @@
-class TaskService{
+class ExpenseService{
     baseUrl: string = 'http://localhost:8080/api/v1/expense'
 
-    async findAllTasks (){
+    async findAllExpenses (){
         const response = await fetch(this.baseUrl);
         return response.json();
     }
 }
 
 
-export const useTaskService = () => new TaskService();
+export const useExpenseService = () => new ExpenseService();

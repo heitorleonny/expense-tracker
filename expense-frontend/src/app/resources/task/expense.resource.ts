@@ -1,4 +1,4 @@
-export class Task{
+export class Expense{
     name?: string;
     value?: number;
     description?: string;
