@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTasks } from "react-icons/fa";
+import { Button } from "./button/button";
 interface TemplateProps{
     children: React.ReactNode;
 }
@@ -21,7 +22,7 @@ const NavBar: React.FC = () => {
             <nav className="flex justify-around bg-red-400 py-3">
                 <FaTasks className="size-10 text-white"/>
                 <a href="https://www.linkedin.com/in/heitor-leonny-24b564240/" target="black">
-                <button className="bg-yellow-500 text-white rounded-lg px-2 py-2 font-bold">Contact</button>
+                <Button text="Contact" style="bg-yellow-500 hover:bg-yellow-300"/>
                 </a>
             </nav>
         </header>
