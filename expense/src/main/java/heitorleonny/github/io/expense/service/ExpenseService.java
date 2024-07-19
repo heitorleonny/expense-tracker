@@ -25,8 +25,6 @@ public class ExpenseService {
 
 
 
-
-
     public List<ExpenseDTO> findAllExpenses(){
         return repository.findAll().stream().map(ExpenseMapper::expenseToExpenseDTO).collect(Collectors.toList());
     }

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Template } from "./components/template";
-import { useExpenseService } from "./resources/task/expense.service"; 
-import { Expense } from "./resources/task/expense.resource";
+import { useExpenseService } from "./resources/expense/expense.service"; 
+import { Expense } from "./resources/expense/expense.resource";
 import { ExpenseCard } from "./components/expense/expenseCard";
 import { Span } from "next/dist/trace";
 import { Button } from "./components/button/button";
