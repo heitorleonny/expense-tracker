@@ -40,4 +40,9 @@ public class ExpenseController {
     public void updateExpense(@RequestBody Expense expense){
         expenseService.updateExpense(expense);
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteExpense(@RequestParam UUID id){
+        expenseService.deleteExpense(id);
+    }
 }

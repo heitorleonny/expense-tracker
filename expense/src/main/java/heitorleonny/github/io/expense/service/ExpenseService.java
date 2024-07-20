@@ -49,4 +49,8 @@ public class ExpenseService {
         newExpense.setDescription(expense.getDescription());
         repository.save(newExpense);
     }
+
+    public void deleteExpense(UUID id) {
+        repository.deleteById(id);
+    }
 }
