@@ -18,7 +18,5 @@ public class ExpenseDTO {
     public Number value;
     public LocalDate date;
     public String description;
-
-
-
+    public String url;
 }

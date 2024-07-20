@@ -29,8 +29,8 @@ public class ExpenseService {
         return repository.findAll().stream().map(ExpenseMapper::expenseToExpenseDTO).collect(Collectors.toList());
     }
 
-    public void saveExpense(Expense expense){
-        repository.save(expense);
+    public Expense saveExpense(Expense expense){
+        return repository.save(expense);
     }
 
 
